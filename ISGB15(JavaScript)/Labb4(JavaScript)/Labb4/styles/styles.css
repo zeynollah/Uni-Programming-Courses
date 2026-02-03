@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+}
+
+.jumbotron, #div-in-form {
+    border-radius: 0.3rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.jumbotron{
+    background-color: #DEDEDE;
+    padding: 1.5rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#div-in-form{
+    box-shadow: 1px 1px 10px grey;
+    padding: 1rem;
+}
+
+.col{
+    margin-bottom: 0.3rem;
+}
+
+#div-in-form > .col > input{
+    width: 100%;
+}
+
+#div-in-form > .col > [type="text"]:focus{
+    box-shadow: 1px 1px 10px #0CAFFF;
+}
+
+#div-in-form > #div-with-a{
+    background-color: #0CAFFF;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin-left: 65%;
+    margin-top: 1rem;
+    width: 35%;
+}
+
+#div-in-form > #div-with-a > #newGame{
+    text-decoration: none;
+    color: white;
+}
+
+table{
+    border-spacing: 0;
+}
+
+#game-area > table tr > td{
+    width: 125px;
+    height: 125px;
+    font-size: 50px;
+    border: 1px solid darkgrey;
+}
+
+aside{
+    display: none;
+}
+
+.d-none{
+    display: none;
+}
+
+@media (min-width: 415px) and (max-width: 1180px){
+    html{
+        font-size: 18px;
+    }
+    main{
+        width: 50%;
+    }
+    aside{
+        display: block;
+        width: 30%;
+    }
+    aside > a > img{
+        width: 100%;
+    }
+    #div-in-form > #div-with-a{
+        width: 125px;
+    }
+    table{
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 1181px){
+    html{
+        font-size: 22px;
+    }
+    main{
+        width: 70%;
+    }
+    aside{
+        display: block;
+        width: 300px;
+    }
+    aside > a > img{
+        width: 100%;
+    }
+    #game-area > table tr > td{
+        width: 200px;
+        height: 200px;  
+    }
+    table{
+        margin-left: 20%;
+    }
+    #div-in-form > #div-with-a{
+        width: 16%;
+        background-color: white;
+        border: 1px solid #0CAFFF;
+        color: #0CAFFF;
+        margin-left: 0;
+        margin-bottom:0;
+    }
+    #div-in-form > #div-with-a > #newGame{
+        color: #0CAFFF;
+    }
+    #div-in-form > #div-with-a:hover{
+        background-color: #0CAFFF;
+        border: 1px solid white;
+    }
+    #div-in-form > #div-with-a:hover > #newGame{
+        color: white;
+    }
+
+    #div-in-form{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .col{
+        width: 49%;
+    }
+
+    .col:nth-child(odd){
+        margin-right: 2%;
+    }
+
+    .check{
+        margin-left: 45%;
+        margin-top: 35px;
+        font-size: 0.8rem;
+    }
+
+}
