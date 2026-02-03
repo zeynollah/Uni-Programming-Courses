@@ -1,0 +1,101 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    background-color: #A9A9A9;
+    border: 1px black solid;
+}
+
+.banner{
+    width: 100%;
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+header img{
+    width: 15%;
+    vertical-align: middle;
+}
+
+header td{
+    border: 1px black solid;
+    width: 33.3%;
+    text-align:center;
+}
+
+td:hover{
+    background:grey;
+    border: 1px white solid;
+    cursor:pointer;
+    transition:0.125s;
+}
+
+header table{
+    width:100%;
+    height: 100%;
+    background-color:white;
+    flex-wrap: nowrap;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.articles{
+    width: 50%;
+    margin-top: 25px;
+    margin-left: 225px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+article{
+    border: 2px black solid;
+    background:white;
+    border-radius: 1%;
+    margin: 10px;
+}
+
+.articles img{
+    border-radius: 5%;
+}
+
+
+article:hover{
+    background:grey;
+    border: 1px white solid;
+    cursor:pointer;
+    transition:0.125s;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+figcaption{
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    border: 1px black solid;
+    background-color: white;
+}
+
+aside{
+    width:15%;
+    height: 40%;
+    margin-top: 35px;
+    margin-left: 160px;
+}
+
+aside img{
+    width:  100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}

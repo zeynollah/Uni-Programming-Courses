@@ -1,0 +1,157 @@
+/* Allmänna CSS inställningar som alla sidor har */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+header{
+    width: 100%;
+    background-color: #A9A9A9;
+    border: 1px black solid;
+    box-shadow: 4px 4px 4px grey;
+}
+
+#menu{
+    width: 50%;
+    display: flex;
+}
+
+#menu > ul{
+    display: inherit;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+#menu > ul > li
+{
+    height: 100%;
+    margin-right: 40px;
+    font-size: 4rem;
+    background-color: lavender;
+    border: 1px black solid;
+    box-shadow: 4px 4px 4px grey;
+    position: relative;
+}
+
+.dropdown>li:hover, .drop a:hover{
+    color: grey !important;
+}
+
+#menu > ul > li:hover>li{
+    cursor: pointer;
+}
+
+.dropdown{
+    list-style-type: none;
+    background-color: lavender;
+    position: absolute;
+    left: -0.1%;
+    top: 100%;
+    width: 209px;
+    text-align: left;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+    box-shadow: 4px 4px 4px grey;
+    opacity: 0.8;
+    display: none;
+}
+.dropdown > li{
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    left: -20%;
+}
+
+#menu>ul>li:hover>.dropdown{
+    display: block;
+}
+
+.banner{
+    width: 100%;
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+header img{
+    width: 15%;
+    vertical-align: middle;
+}
+
+/* Sidspecifika CSS inställningar */
+
+.articles{
+    width: 50%;
+    margin-top: 25px;
+    margin-left: 225px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+article{
+    border: 2px black solid;
+    background:white;
+    border-radius: 1%;
+    margin: 10px;
+}
+
+.articles img{
+    border-radius: 5%;
+}
+
+
+article:hover{
+    background:grey;
+    border: 1px white solid;
+    cursor:pointer;
+    transition:0.125s;
+}
+
+#menu a, a{
+    text-decoration: none;
+    color: black;
+}
+
+figcaption{
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    border: 1px black solid;
+    background-color: white;
+}
+
+aside{
+    width:15%;
+    height: 40%;
+    margin-top: 35px;
+    margin-left: 160px;
+}
+
+aside img{
+    width:  100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+table{
+    background-color: white;
+    border: 1px black solid;
+    margin-left: 30px;
+  }
+  
+  table > thead{
+    border: 1px black solid;
+  }
+  
+  table > thead th{
+    background-color: rgb(181, 181, 181);
+    border: 1px black solid;
+  }

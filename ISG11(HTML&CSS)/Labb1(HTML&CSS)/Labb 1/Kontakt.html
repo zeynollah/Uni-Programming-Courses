@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakta-Blucket</title>
+    <link rel="stylesheet" href="style/styl.css">
+</head>
+<body>
+    <header>
+        <div class="banner">       
+            <img src="bilder/416411644_1020657995694826_5541040593113087684_n.png" alt="Företagslogga"> 
+           Var miljösmart, köp secondhand!&#128512;
+        </div>
+        
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="Hem.html">Hem</a></td>
+                    <td><a href="annons.html">Annonser</a></td>
+                    <td><a href="Kontakt.html">Kontakta oss</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48129.607683360984!2d20.174030498357247!3d67.85374602497205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d08e2ae4257c2b%3A0x4034506de8c8660!2sKiruna!5e0!3m2!1ssv!2sse!4v1706277078460!5m2!1ssv!2sse"></iframe>
+    </div>
+
+    <section>
+        <h2>Fyll i formuläret nedan</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Namn*:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Telefonnummer*:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Mailadress*:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Beskriv ditt problem*:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Skicka">
+        </form>
+    </section>
+    <aside > 
+      <div class="reklam">
+        <i>Annonser</i>
+      <img src="bilder/reklam.jpg" alt="Kaureklam"> 
+      <img src="bilder/ostersund-logo.png" alt="ostersundreklam">
+    </div>
+    </aside>
+    <footer>
+        &copy; Blucket AB 2024
+    </footer>
+</body>
+</html>
